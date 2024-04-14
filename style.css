@@ -1,0 +1,40 @@
+*{
+    padding: °;
+    margin: 0;
+}
+
+#game {
+    width: 500 px;
+    length: 200 px;
+    border: 1 px solid black;
+}
+
+#character{
+    width: 20px;
+    height: 50px;
+    background-color: red;
+    position : relative;
+    top : 150 px;
+}
+
+
+@keyframes jump{
+    0%{ top : 150px}
+    50%{ top : 100px}
+    100%{top : 150px}
+}
+
+#block{
+    width : 20px;
+    height: 20px;
+    background-color: blue;
+    position: relative;
+    top: 130px;
+    left: 480px; 
+    animation: block is infinite;
+}
+@keyframes block {
+    0%{left:480px;}
+    100%{left:480px;}
+    
+}
