@@ -21,10 +21,18 @@ p {
     height: auto; /* Hauteur automatique pour conserver les proportions */
 }
 
+/* GAME */
+#game-container {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+}
+
 #game{
     width: 500px;
     height: 200px;
     border: 1px solid black;
+    border-radius: 10px;
 }
 #character {
     width: 20px;
@@ -32,6 +40,7 @@ p {
     background-color: red;
     position : relative;
     top: 150px;
+    border-radius: 10px;
 }
 .animate {
     animation: jump 500ms infinite;
