@@ -16,11 +16,11 @@ function jump()
 
 var checkDead = setInterval(function(){
     var characterTop = 
-    parserInt(window.getComputedStyle(character).
+    parseInt(window.getComputedStyle(character).
     getPropertyValue("top"));
     
     var blockLeft = 
-    parserInt(window.getComputedStyle(block).
+    parseInt(window.getComputedStyle(block).
     getPropertyValue("left"));
 
     if ((blockLeft < 20 && blockLeft > 0) &&
