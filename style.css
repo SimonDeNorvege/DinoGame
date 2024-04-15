@@ -2,6 +2,25 @@
     padding: 0;
     margin: 0;
 }
+
+p {
+    text-align: center; /* Centrer le contenu */
+}
+
+/* NAVBAR */
+#navbar {
+    display: flex; /* Utiliser flexbox */
+    justify-content: space-between; /* Espacement égal entre les éléments */
+    align-items: center; /* Centrer verticalement les éléments */
+    padding: 10px; /* Ajouter un peu d'espacement */
+}
+
+/* LOGO NAVBAR */
+#navbar-logo img {
+    width: 50px; /* Définir une largeur pour l'image */
+    height: auto; /* Hauteur automatique pour conserver les proportions */
+}
+
 #game{
     width: 500px;
     height: 200px;
