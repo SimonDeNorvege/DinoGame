@@ -1,7 +1,9 @@
 var character =
 document.getElementById("character");
 
-var block = document.getElementById("block");
+var block = 
+document.getElementById("block");
+
 function jump()
 {
     if (character.classList != "animate") {
@@ -16,13 +18,15 @@ var checkDead = setInterval(function(){
     var characterTop = 
     parserInt(window.getComputedStyle(character).
     getPropertyValue("top"));
+    
     var blockLeft = 
-    parserInt(window.getComputedStyle(block)
-    .getPropertyValue("left"));
-    if (blockLeft && blockLeft > 0 %% 
+    parserInt(window.getComputedStyle(block).
+    getPropertyValue("left"));
+
+    if ((blockLeft < 20 && blockLeft > 0) &&
         characterTop >= 130) {
             block.style.animation = "none";
             block.style.display = "none";
             alert("U lose");
         }
-}; 10);
+}, 10);
