@@ -1,5 +1,6 @@
-var character
+var character =
 document.getElementById("character");
+
 var block = document.getElementById("block");
 function jump()
 {
@@ -12,5 +13,16 @@ function jump()
 }
 
 var checkDead = setInterval(function(){
-    var characterTop = parserInt(window.getComputedStyle(character).getPropertyValue("top"));
-}, 10)
+    var characterTop = 
+    parserInt(window.getComputedStyle(character).
+    getPropertyValue("top"));
+    var blockLeft = 
+    parserInt(window.getComputedStyle(block)
+    .getPropertyValue("left"));
+    if (blockLeft && blockLeft > 0 %% 
+        characterTop >= 130) {
+            block.style.animation = "none";
+            block.style.display = "none";
+            alert("U lose");
+        }
+}; 10);
